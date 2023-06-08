@@ -26,8 +26,8 @@ if __name__ == '__main__':
     svm_util.initialize(X_train, y_train)
     # svm_util.initialize_with_grid_search(X_train, y_train)
 
+    # Printing out classification_report
     predictions = [svm_util.predict(text) for text in X_test]
-    # Example using classification_report
     report = classification_report(y_test, predictions)
     print(report)
 

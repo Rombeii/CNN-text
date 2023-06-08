@@ -51,7 +51,6 @@ for topic in topics:
 
 # Create word clouds and save as images
 for topic, words in topic_data.items():
-    print(topic)
     # Create a WordCloud object
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(words)
 

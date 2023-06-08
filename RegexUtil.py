@@ -59,13 +59,6 @@ class RegexUtil:
         publisher_match = re.search(publisher_regex, text)
         return publisher_match.group(1).strip() if publisher_match else 'Unknown'
 
-    # @staticmethod
-    # def get_date_from_text_with_regex(text, regex):
-    #     match = re.search(regex, text)
-    #     date_str = match.group(1).strip() if match else ''
-    #     date_str = date_str.replace("EST, ", "").strip()  # Remove "EST" from the date string
-    #     return datetime.strptime(date_str, "%H:%M %d %B %Y").strftime("%Y-%m-%d %H:%M") if date_str else 'Unknown'
-
     @staticmethod
     def get_date_from_text_with_regex(text, regex):
         match = re.search(regex, text)
